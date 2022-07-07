@@ -4,6 +4,7 @@ import FunkoLifeImg from '../assets/FunkoLife.png'
 import ItalianUImg from '../assets/ItalianU.png'
 import CriptoAppImg from '../assets/CriptoApp.png'
 import BootcampSportImg from '../assets/BootcampSport.png'
+import cerrarBtn from '../assets/cerrar.svg'
 
 const Proyectos = () => {
   const [modal, setModal]= useState(false)
@@ -25,6 +26,10 @@ const Proyectos = () => {
     setModal(true)
   };
 
+  const handleCerrar =({})=>{
+    window.location.reload();
+  }
+
   return (
     <section id="proyectos">
       <h2 id="align">Proyectos</h2>
@@ -43,6 +48,7 @@ const Proyectos = () => {
               }}
             >
               <div className="hiden" style={{ display: "none" }}>
+                <div className="marco">
                 <img alt={proyecto.nombre} key={proyecto.nombre} src={imagenes[proyecto.nombre]} />
                 <h3>{proyecto.nombre}</h3>
                 <h3>{proyecto.descripcion}</h3>
@@ -53,7 +59,9 @@ const Proyectos = () => {
                 >
                   Visita Mi Sitio
                 </a>
-                )
+                <img onClick={handleCerrar} id="cerrar" alt="cerrar boton" src={cerrarBtn} />
+
+                </div>
               </div>
             </div>
           );

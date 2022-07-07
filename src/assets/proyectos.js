@@ -4,7 +4,7 @@ export const proyectos = [
     {
     id: 1,
     nombre: 'FunkoLife',
-    descripcion: 'eCommerce de funkos, desarrollado con Node y Express para el b',
+    descripcion: 'eCommerce de funkos, desarrollado con Node y Express para el backend, React para el frontend y base de datos de Mongo',
     dir: 'https://spontaneous-praline-8d5c90.netlify.app/',
     },
     {
