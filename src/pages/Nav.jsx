@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <nav>
       <ul>
-        <li>Introducción</li>
+        <a href='#introduccion'>Introducción</a>
         <a href= '#proyectos'>Proyectos</a>
         <a href='#herramientas'>Herramientas</a>
         <a href='#contacto'>Contacto</a>

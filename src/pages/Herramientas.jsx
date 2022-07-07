@@ -4,10 +4,10 @@ import html from '../assets/html.png'
 import css from '../assets/css.png'
 import javascriptImg from '../assets/javascript.png'
 import git from '../assets/git.png'
-import github from '../assets/github.jpeg'
-import react from '../assets/react.jpg'
-import mongo from '../assets/mongo.jpg'
-import node from '../assets/node.jpg'
+import github from '../assets/github.png'
+import react from '../assets/react.png'
+import mongo from '../assets/mongo.png'
+import node from '../assets/node.png'
 import bootstrap from '../assets/bootstrap.png'
 
 
@@ -29,8 +29,13 @@ const Herramientas = () => {
   return (
     <section id='herramientas'>
         <h2 id='align'>Herramientas</h2>
-        <div>
-            {herramientas.map((herramienta)=>  <img key={herramienta} className='tols' alt={herramienta} src={tools[herramienta]} />)}
+        <div className='herramientas'>
+            {herramientas.map((herramienta)=>{
+              return <div className='divTool'>
+                <img className='tols' src={tools[herramienta]} alt={herramienta} />
+                <p>{herramienta}</p>
+              </div>
+            })}
         </div>
     </section>
   )

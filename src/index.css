@@ -28,7 +28,7 @@ h2::after{
   content: '';
   background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
   display: block;
-  width: 3.25em;
+  width: 4em;
   height: 2px;
   margin: 0.7em 0 1em 0;
   border-radius: 2px;
@@ -73,10 +73,25 @@ ul{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-left: 8em;
+  padding-right: 8em;
+  z-index: 100;
 }
 
 li{
   list-style: none; 
+}
+
+a{
+  font-family: helvetica;
+  text-decoration: none;
+  color: #636363;
+  font-weight: 600;
+}
+
+p{
+  font-family: helvetica;
+  
 }
 
 section{
@@ -136,7 +151,7 @@ button:hover{
 #proyectos{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  
 }
 
 #align{
@@ -153,9 +168,10 @@ button:hover{
 }
 
 .tols{
-  width: 100px;
-  border-radius: 40%;
+  width: 70px;
+  border-radius: 50%;
   margin: 1em;
+  margin-bottom: 0;
 }
 
 #herramientas{
@@ -173,3 +189,52 @@ button:hover{
 
 
 
+#mostrar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(199, 187, 187);
+  opacity: .97;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-shadow: none;
+  padding: 12em;
+  color: #fff;
+}
+
+#mostrar img{
+  width: 800px;
+  border-radius: 5px;
+}
+
+.herramientas{
+  padding: 1em 3em 1em 3em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.divTool{
+  font-family: helvetica;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contacto{
+  font-display: flex;
+  flex-direction: column;
+}
+
+#contacto h2{
+  display: block;
+  width: 100%;
+  padding-left: 1em;
+}
+
+#contacto img{
+  width: 50px;
+  margin: 0em 1em 0em 1em;
+}

@@ -4,8 +4,8 @@ import Introduccion from "./pages/Introduccion";
 import Nav from "./pages/Nav";
 import Portafolio from "./pages/Portafolio";
 import Proyectos from "./pages/Proyectos";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
+
+
 
 
 
