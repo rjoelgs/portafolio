@@ -68,6 +68,7 @@ nav{
   margin-top: 3em;
   margin-left: auto;
   margin-right: auto;
+  min-height: 60px;
 }
 
 ul{
@@ -268,6 +269,13 @@ span{
   font-size: 1.2em;
 }
 
+#menu{
+  display: none;
+  width: 32px;
+}
+
+
+
 .marco a{
   margin-top: .5em;
   background: #fff;
@@ -341,6 +349,30 @@ span{
   nav{
     position: relative;
   }
+  ul{
+    display: none;
+  }
+
+  #menu{
+    display: block;
+    position: absolute;
+  }
+
+  #menu:hover ~ ul{
+    display: flex;
+    position: relative;
+  }
+
+  ul:hover{
+    display: flex;
+  }
+  
+  nav ul a:hover{
+    padding: .2em 3em .2em 3em;
+    background-color: #fff;
+    transform: scale(1.1);
+  }
+
 }
 
 
