@@ -26,7 +26,7 @@ const Proyectos = () => {
     setModal(true)
   };
 
-  const handleCerrar =({})=>{
+  const handleCerrar =()=>{
     window.location.reload();
   }
 
@@ -50,8 +50,9 @@ const Proyectos = () => {
               <div className="hiden" style={{ display: "none" }}>
                 <div className="marco">
                 <img alt={proyecto.nombre} key={proyecto.nombre} src={imagenes[proyecto.nombre]} />
-                <h3>{proyecto.nombre}</h3>
-                <h3>{proyecto.descripcion}</h3>
+                <h3><span>{proyecto.nombre}</span></h3>
+                <h3><span>Descripción:{' '}</span>{proyecto.descripcion}</h3>
+                <h3><span>Herramientas: {' '}</span>{proyecto.herramientas}</h3>
                 <a
                   href={`${proyecto.dir}`}
                   target="_blank"

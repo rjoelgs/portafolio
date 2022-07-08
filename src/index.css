@@ -52,6 +52,7 @@ header h1{
 header p{
   font-size: 1.25em;
   color: rgba(255, 255, 255, 0.65);
+  max-height: 200px;
 }
 
 nav{
@@ -139,6 +140,7 @@ button:hover{
   background-repeat: no-repeat;
   background-position: top;
   color: #fff;
+  cursor: pointer;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
@@ -151,6 +153,7 @@ button:hover{
 #proyectos{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   
 }
 
@@ -169,7 +172,7 @@ button:hover{
 
 .tols{
   width: 70px;
-  border-radius: 50%;
+  
   margin: 1em;
   margin-bottom: 0;
 }
@@ -194,7 +197,7 @@ button:hover{
   align-items: center;
   justify-content: center;
   background-color: rgb(199, 187, 187);
-  opacity: .97;
+  opacity: .94;
   color: rgb(0, 0, 0);
   width: 100%;
   height: 100%;
@@ -213,6 +216,7 @@ button:hover{
   padding: 1em 3em 1em 3em;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .divTool{
@@ -235,7 +239,7 @@ button:hover{
 }
 
 #contacto img{
-  width: 50px;
+  width: 40px;
   margin: 0em 1em 0em 1em;
 }
 
@@ -253,7 +257,90 @@ button:hover{
 
 #mostrar #cerrar{
   position: absolute;
-  width: 40px;
+  width: 35px;
   right: 0;
-  
+  cursor: pointer;
 }
+
+span{
+  color: #525151;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.marco a{
+  margin-top: .5em;
+  background: #fff;
+  border-radius: 10px;
+  padding: .5em;
+  border: black 2px solid;
+}
+
+.marco a:hover{
+    cursor: pointer;
+    background-color: #f4f4f4a0;
+  }
+
+
+@media  screen and (max-width: 1150px) {
+  .proyecto{
+    margin: 1em 1em 1em 1em;
+  }
+}
+
+@media  screen and (max-width: 1135px) {
+  section{
+    width: 90%;
+  }
+  nav{
+    width: 90%;
+  }
+}
+@media  screen and (max-width: 1000px) {
+  section{
+    padding: 4em 2em 2em 2em;
+  }
+}
+@media  screen and (max-width: 850px) {
+  #introduccion{
+    padding: 1em 1em 1em 1em;
+  }
+  .proyecto{
+    margin: 1em;
+    width: 250px;
+    height: 150px;
+  }
+
+  #mostrar img{
+    width: 270px;
+  }
+
+  .marco{
+    width: 350px;
+  }
+ 
+}
+
+@media  screen and (max-width: 790px) {
+  #introduccion{
+    flex-direction: column-reverse;
+  }
+  .herramientas{
+    padding: .5em;
+  }
+  #contacto img{
+    margin: 0em .5em 0em .5em;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+  }
+  ul a{
+    margin-top: .5em;
+  }
+  nav{
+    position: relative;
+  }
+}
+
+
