@@ -244,6 +244,12 @@ button:hover{
   margin: 0em 1em 0em 1em;
 }
 
+#contacto img:hover{
+  transform: scale(1.1);
+  filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.2));
+  opacity: .9;
+}
+
 .marco{
   display: flex;
   flex-direction: column;
