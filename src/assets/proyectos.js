@@ -4,8 +4,8 @@ export const proyectos = [
     {
     id: 1,
     nombre: 'FunkoLife',
-    descripcion: 'eCommerce de funkos Full Stack',
-    herramientas: 'html, css, react, mongodb, node, express',
+    descripcion: 'eCommerce de funkos Full Stack MERN',
+    herramientas: 'html, css, react, mongodb, node, express, jwt',
     dir: 'https://spontaneous-praline-8d5c90.netlify.app/',
     },
     {
@@ -18,7 +18,7 @@ export const proyectos = [
     {
     id: 3,
     nombre: 'ItalianU',
-    descripcion: 'Proyecto de restaurante ',
+    descripcion: 'Proyecto de restaurante con firebase',
     herramientas: 'html, css, javascript, react, firebase',
     dir: 'https://shimmering-frangollo-3902f2.netlify.app/'
     },

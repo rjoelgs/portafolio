@@ -262,17 +262,12 @@ button:hover{
 
 }
 
-#mostrar #cerrar{
-  position: absolute;
-  width: 35px;
-  right: 0;
-  cursor: pointer;
-}
+
 
 span{
   color: #525151;
-  font-weight: 900;
-  font-size: 1.2em;
+  font-weight: 600;
+  font-size: 1em;
 }
 
 #menu{
@@ -280,20 +275,25 @@ span{
   width: 32px;
 }
 
-
-
-.marco a{
-  margin-top: .5em;
-  background: #fff;
-  border-radius: 10px;
-  padding: .5em;
-  border: black 2px solid;
+.modal{
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  
 }
 
-.marco a:hover{
-    cursor: pointer;
-    background-color: #f4f4f4a0;
-  }
+.modal  h2::after{
+  width: auto;
+}
+
+.modal a button{
+  margin-top: 1em;
+  text-align: center;
+  
+}
+
+
+
 
 
 @media  screen and (max-width: 1150px) {
