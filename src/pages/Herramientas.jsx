@@ -9,6 +9,7 @@ import react from "../assets/react.png";
 import mongo from "../assets/mongo.png";
 import node from "../assets/node.png";
 import bootstrap from "../assets/bootstrap.png";
+import redux from '../assets/redux.png'
 
 const Herramientas = () => {
   const tools = {
@@ -21,6 +22,7 @@ const Herramientas = () => {
     mongo: mongo,
     node: node,
     bootstrap: bootstrap,
+    redux: redux
   };
 
   return (

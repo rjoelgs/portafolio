@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { proyectos } from "../assets/proyectos";
-import FunkoLifeImg from "../assets/FunkoLife.png";
-import ItalianUImg from "../assets/ItalianU.png";
-import CriptoAppImg from "../assets/CriptoApp.png";
-import BootcampSportImg from "../assets/BootcampSport.png";
 import Modal from "react-modal";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const customStyles = {
   content: {
@@ -13,14 +11,18 @@ const customStyles = {
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
-    transform: "translate(-50%, -50%)",  
-    maxWidth: 'calc(100% - 30px)'
+    transform: "translate(-50%, -50%)",
+    maxWidth: "calc(100% - 35px)",
   },
 };
 
 Modal.setAppElement("#root");
 
 const Proyectos = () => {
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
+
   const [modal, setModal] = useState(false);
 
   const [objModal, setObjModal] = useState({
@@ -29,19 +31,14 @@ const Proyectos = () => {
     dir: "",
   });
 
-  const imagenes = {
-    FunkoLife: FunkoLifeImg,
-    ItalianU: ItalianUImg,
-    CriptoApp: CriptoAppImg,
-    BootcampSport: BootcampSportImg,
-  };
+
 
   const handleClick = (e) => {
     setObjModal({
       nombre: e.target.attributes.name.value,
       descripcion: e.target.attributes.description.value,
       dir: e.target.attributes.site.value,
-      tools: e.target.attributes.tools.value
+      tools: e.target.attributes.tools.value,
     });
     setModal(true);
   };
@@ -58,6 +55,7 @@ const Proyectos = () => {
         {proyectos.map((proyecto) => {
           return (
             <div
+              data-aos="zoom-in-up"
               name={proyecto.nombre}
               description={proyecto.descripcion}
               site={proyecto.dir}
@@ -80,11 +78,19 @@ const Proyectos = () => {
           style={customStyles}
           contentLabel="Example Modal"
           onRequestClose={closeModal}
+          closeTimeoutMS={100}
+          overlayClassName="modal-fondo"
         >
           <div className="modal">
             <h2>{objModal.nombre}</h2>
-            <p><span>proyecto: &nbsp;</span>{objModal.descripcion}</p>
-            <p><span>herramientas: &nbsp;</span>{objModal.tools}</p>
+            <p>
+              <span>proyecto: &nbsp;</span>
+              {objModal.descripcion}
+            </p>
+            <p>
+              <span>herramientas: &nbsp;</span>
+              {objModal.tools}
+            </p>
             <a href={objModal.dir} target="_blank" rel="noopener noreferrer">
               <button>ir al sitio</button>
             </a>
